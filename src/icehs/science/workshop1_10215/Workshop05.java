@@ -12,7 +12,7 @@ public class Workshop05 {
     
     public static void main( String[] args ) {
         
-        System.out.print( "Computer Science 성적을 입력하세요 : " );
+    	System.out.print( "Computer Science 성적을 입력하세요 : " );
         double computerScienceScore = getUserInput();
         System.out.print( "Java Programming 성적을 입력하세요 : " );
         double javaProgrammingScore = getUserInput();
@@ -25,8 +25,13 @@ public class Workshop05 {
         System.out.println( "==============================" );
         double grade = (computerScienceScore + javaProgrammingScore + engineerMathScore + operaScore + badmintonScore ) / 5; 
         System.out.println( "평점은 "+ grade +"점 입니다." );
-        if ( grade >= 3.7) {
-        	System.out.println("다음 학기 장학금 대상자 입니다.");
+        
+        if ( grade >= 3.7 && computerScienceScore >= 2.5) {
+        	if( javaProgrammingScore >= 2.5 && engineerMathScore >= 2.5 ) {
+        		if( operaScore >= 2.5 && badmintonScore >= 2.5 ) {
+        			 System.out.println("다음 학기 장학금 대상자 입니다.");
+        		}
+        	}
         }
     }
     

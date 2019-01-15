@@ -42,19 +42,15 @@ public class Workshop04 {
         System.out.print( " 크림치즈 : " + creamCheesePrice + "원\n");
         
         long totalPrice = americanoPrice + cafeLattePrice + bagelPrice + creamCheesePrice;
-        long mileage;
+        long mileage = 0;
         System.out.println( "======================" );
         System.out.println("총 구매 금액 : " + totalPrice + "원" );
         if ( totalPrice >= 30000) {
         	mileage = totalPrice / 50 ;
-        	System.out.println("포인트 적립 : " + mileage + "점" );
         }else if ( totalPrice >= 12000) {
         	mileage = totalPrice / 100 ;
-        	System.out.println("포인트 적립 : " + mileage + "점" );
-        }else {
-        	mileage = 0;
-        	System.out.println("포인트 적립 : " + mileage + "점" );
         }
+        System.out.println("포인트 적립 : " + mileage + "점" );
           
     }
     
