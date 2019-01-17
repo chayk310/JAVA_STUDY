@@ -18,11 +18,11 @@ public class AccountCalculatorTest {
 			System.out.println("이율을 변경합니다.");
 			
 			for (int i = 0 ; i < acc.length ; i++) {
-				acc[i].calcuateInterst( 3.7 );
+				acc[i].setInterestRate( 3.7 );
 			}
 			
 			for (int i = 0 ; i < acc.length ; i++) {
-				System.out.println("계좌번호 : " + acc[i].getName() + " / 이율 : " + acc[i].getInterestRate() +  + " / 잔액 : " + acc[i].getBalance() );
+				System.out.println("계좌번호 : " + acc[i].getName() + " / 이율 : " + acc[i].getInterestRate() + " / 잔액 : " + (acc[i].getBalance() + acc[i].calcuateInterst()) );
 			}
 	}
 

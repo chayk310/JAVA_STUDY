@@ -35,7 +35,7 @@ public class Account {
 		this.interestRate = interestRate;
 	}
 	
-	public int calcuateInterst() {
+	public int calcuateInterst( ) {
 		return (int)(this.balance * this.interestRate / 100);
 	}
 	

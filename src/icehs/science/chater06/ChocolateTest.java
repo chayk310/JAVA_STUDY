@@ -5,9 +5,9 @@ public class ChocolateTest {
 	public static void main(String[] args) {
 		Chocolate choco = new Chocolate();
 		
-		choco.name = "아마도라";
-		choco.type = "다크";
-		choco.price = 2200;
+//		choco.name = "아마도라";
+//		choco.type = "다크";
+//		choco.price = 2200;
 		
 		choco.printChocolateInfo();
 		
